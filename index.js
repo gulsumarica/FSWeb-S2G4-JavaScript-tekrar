@@ -96,7 +96,7 @@ let ucetambolunenler = [],
   ucebolunenlerintoplami = [],
   besyuzdenkucuksayilar = [],
   siralisayilar = [],
-  tekraredensayilar;
+  tekraredensayilar = [];
 
 // 3a çözümü
 
@@ -129,8 +129,20 @@ besyuzdenkucuksayilar = sayilar.filter((besyuzdenKucukler) => besyuzdenKucukler 
 siralisayilar = besyuzdenkucuksayilar.sort((a,b) => a-b);
 
 // 3f çözümü
+let nesne = {};
+for(let sonuc of sayilar){
+  if(nesne[sonuc] === undefined){
+    nesne[sonuc] = 1;
+  }else{
+    nesne[sonuc]++;
+  }
+  }
+  for(let yazdir in nesne){
+    tekraredensayilar.push(`${yazdir} sayısı ${nesne[yazdir]} kere tekrar edilmiştir`);
+  }
+  console.log.apply(tekraredensayilar);
 
-/* kodlar buraya */
+
 
 /*  Bu satırın aşağısındaki kodları lütfen değiştirmeyin  */
 
