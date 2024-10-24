@@ -95,7 +95,7 @@ let ucetambolunenler = [],
   enbuyuk = sayilar[0],
   ucebolunenlerintoplami = [],
   besyuzdenkucuksayilar = [],
-  siralisayilar,
+  siralisayilar = [],
   tekraredensayilar;
 
 // 3a çözümü
@@ -126,7 +126,7 @@ besyuzdenkucuksayilar = sayilar.filter((besyuzdenKucukler) => besyuzdenKucukler 
 
 // 3e çözümü
 
-/* kodlar buraya */
+siralisayilar = besyuzdenkucuksayilar.sort((a,b) => a-b);
 
 // 3f çözümü
 
